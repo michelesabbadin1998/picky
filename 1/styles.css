@@ -110,9 +110,7 @@ footer p a:hover
     text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
     background-color: rgba(255, 255, 255, 0.1); /* Aggiungi uno sfondo al passaggio del mouse */
 }
-.hero 
-{
-    background-image: url('images-index/scopri.jpg'); /* Inserisci l'immagine di sfondo */
+.hero {
     background-size: cover;
     background-position: center;
     height: 30vh;
