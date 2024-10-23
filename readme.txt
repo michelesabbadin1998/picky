@@ -1,1 +1,2 @@
-
+- update hero in modo che l'immagine venga impostata nell'html 
+- arrivare a struttura completa con pagina finale con slider funzionante. una volta arrivati qui, sistemiamo lo slider come erano disposti i vecchi contenitori
