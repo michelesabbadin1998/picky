@@ -1,1 +1,161 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+main {
+    flex: 1; 
+    padding: 20px;
+    margin-top: 40px; 
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #4CAF50; 
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    margin: 0px;
+    z-index: 1000;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+header h1 {
+    font-size: 22px;
+    margin: 0;
+    color: white;
+}
+
+header h1 a {
+    color: white; /* Colore bianco */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+header h1 a:hover {
+    color: white; /* Colore bianco anche al passaggio del mouse */
+    text-decoration: none; /* Mantiene nessuna sottolineatura anche al passaggio del mouse */
+}
+
+header nav ul.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul.menu li {
+    margin-left: 5px;
+}
+
+header nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 30vh; /* L'hero occupa il 50% dell'altezza della finestra del browser */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.view-all-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.view-all-button:hover {
+    background-color: #218838;
+}
+
+/* Media query per schermi piccoli */
+@media screen and (max-width: 768px) 
+{
+    .header-fascia 
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .menu 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li 
+    {
+        margin: 10px 0;
+    }
+    .menu li a 
+    {
+        font-size: 18px;
+    }
+    h1 
+    {
+        font-size: 24px;
+    }
+    footer
+    {
+        font-size: 10px;
+    }
+        #weather-container {
+        width: 90%; /* Più largo sui dispositivi piccoli */
+    }
+}
