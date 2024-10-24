@@ -162,6 +162,7 @@ main {
     font-size: 14px;
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.3s;
+    height: 20px;
 }
 
 .btn-sidebar:hover {
