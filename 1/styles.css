@@ -126,7 +126,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box; /* Includi padding e border nel calcolo della larghezza */
     margin-right: 20px; /* Spazio tra il contenitore sinistra e i continenti */
 }
 
@@ -240,8 +239,8 @@ footer {
         padding: 15px 25px; /* Aumenta il padding del pulsante */
     }
 
-        .contenitori {
-        flex-direction: column; /* Il contenitore sinistro va sopra i continenti */
+      .layout-container {
+        flex-direction: column; /* Dispone tutto in colonna su mobile */
     }
 
     .contenitore-sinistra {
@@ -250,8 +249,8 @@ footer {
     }
 
     .sottocontenitore {
-        flex-basis: calc(50% - 10px); /* Ogni sottocontenitore occupa metà larghezza */
-        margin-bottom: 0;
+        display: inline-block;
+        width: calc(50% - 10px); /* Due sottocontenitori uno accanto all'altro */
         margin-right: 10px; /* Spazio tra i sottocontenitori */
     }
     .continenti {
@@ -274,10 +273,6 @@ footer {
     @media screen and (max-width: 480px) {
         .continente {
             flex-basis: calc(100% - 20px); /* Un contenitore per riga su schermi molto piccoli */
-        }
-        .sottocontenitore {
-            flex-basis: 100%; /* Ogni sottocontenitore occupa tutta la larghezza nei dispositivi molto piccoli */
-            margin-right: 0; /* Rimuove il margine tra i sottocontenitori */
         }
     /* Stili per il desktop */
     @media screen and (min-width: 769px) {
