@@ -158,6 +158,12 @@ main {
     height: 100%; /* Riempie tutto lo spazio del genitore */
 }
 
+.content-left p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: white;
+}
+
 /* Descrizione e bottone a destra */
 .content-right {
     width: 50%;
