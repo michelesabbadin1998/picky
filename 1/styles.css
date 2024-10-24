@@ -147,6 +147,50 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
     flex: 1; /* Assicura che occupino altezza uguale */
 }
+
+/* Immagine a sinistra */
+.content-left {
+    flex: 1;
+    text-align: center;
+}
+
+.content-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Descrizione e bottone a destra */
+.content-right {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.content-right p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Stile del pulsante all'interno dei sottocontenitori */
+.btn-sidebar {
+    background-color: #1976D2; /* Blu più scuro */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-sidebar:hover {
+    background-color: #0d47a1; /* Colore più scuro al passaggio del mouse */
+    transform: translateY(-3px); /* Effetto di sollevamento */
+}
+
 /* Sezione continenti */
 .continenti {
     display: flex;
@@ -262,6 +306,22 @@ footer {
         width: calc(50% - 10px); /* Due sottocontenitori uno accanto all'altro */
         margin-right: 10px; /* Spazio tra i sottocontenitori */
     }
+
+    .content-left, .content-right {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .content-right p {
+        font-size: 1.2rem; /* Aumenta la dimensione del testo per mobile */
+    }
+
+    .btn-sidebar {
+        font-size: 16px; /* Aumenta la dimensione del bottone */
+        padding: 12px 20px;
+    }
+    
     .continenti {
         /* Modifiche alla sezione continenti per spaziatura */
         justify-content: flex-start; /* Allinea a sinistra */
