@@ -10,6 +10,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    display: flex;
 }
 
 /* Layout generale */
@@ -101,7 +102,7 @@ main {
 /* Stili per la sezione Continenti */
 .continenti {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive con minimo di 150px */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive con minimo di 150px */
     gap: 20px;
     padding: 20px;
     background-color: #f8f8f8;
