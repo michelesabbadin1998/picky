@@ -111,6 +111,32 @@ main {
     transform: translateY(-3px); /* Movimento verso l'alto al passaggio del mouse */
 }
 
+/* Layout container */
+.layout-container {
+    display: flex; /* Dispone i contenitori in orizzontale per il desktop */
+    flex-wrap: wrap; /* Permette ai contenuti di andare a capo su mobile */
+    margin: 20px 0; /* Margine sopra e sotto il layout */
+    width: 100%;
+}
+
+/* Contenitore sinistra */
+.contenitore-sinistra {
+    width: 25%; /* Occupa il 25% della larghezza su desktop */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px; /* Spazio tra il contenitore sinistra e i continenti */
+}
+
+/* Sottocontenitori */
+.sottocontenitore {
+    background-color: #f0f0f0; /* Sfondo chiaro per i sottocontenitori */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    margin-bottom: 20px; /* Spazio tra i sottocontenitori */
+    flex: 1; /* Assicura che occupino altezza uguale */
+}
 /* Sezione continenti */
 .continenti {
     display: flex;
@@ -119,6 +145,7 @@ main {
     align-items: flex-start; /* Allinea i contenitori nella parte superiore */
     flex: 1; /* Fa sì che la sezione occupi lo spazio rimanente del main */
     padding: 20px;
+    width: 75%;
 }
 
 /* Contenitori continenti */
@@ -211,6 +238,20 @@ footer {
         padding: 15px 25px; /* Aumenta il padding del pulsante */
     }
 
+      .layout-container {
+        flex-direction: column; /* Dispone tutto in colonna su mobile */
+    }
+
+    .contenitore-sinistra {
+        width: 100%; /* Occupa tutta la larghezza */
+        margin-bottom: 20px; /* Spazio sotto il contenitore a sinistra */
+    }
+
+    .sottocontenitore {
+        display: inline-block;
+        width: calc(50% - 10px); /* Due sottocontenitori uno accanto all'altro */
+        margin-right: 10px; /* Spazio tra i sottocontenitori */
+    }
     .continenti {
         /* Modifiche alla sezione continenti per spaziatura */
         justify-content: flex-start; /* Allinea a sinistra */
@@ -222,7 +263,11 @@ footer {
         flex-basis: calc(50% - 20px); /* Due contenitori per riga */
         margin: 10px; /* Margine tra i continenti */
     }
-
+    
+        .sottocontenitore:last-child {
+        margin-right: 0;
+    }
+        
     /* Sezione continenti per visualizzazione singola */
     @media screen and (max-width: 480px) {
         .continente {
