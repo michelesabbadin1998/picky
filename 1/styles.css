@@ -23,7 +23,7 @@ html, body {
     top: 0; /* Posiziona la fascia in cima alla pagina */
     left: 0; /* Posiziona a sinistra */
     z-index: 1000; /* Assicura che sia sopra altri elementi */
-    height: auto;
+    height: 30px;
 }
 
 nav {
@@ -152,6 +152,9 @@ footer {
 @media screen and (max-width: 768px) {
     /* Dimensioni del titolo e del paragrafo nella sezione hero */
     
+    .header-fascia {
+        height: auto;
+    }
     .menu a {
         font-size: 12px; /* Aumenta la dimensione del titolo */
     }
