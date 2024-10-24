@@ -60,7 +60,7 @@ nav {
 /* Stili per il main */
 main {
     flex: 1; /* Fa in modo che il main cresca per occupare lo spazio rimanente */
-    padding-top: 60px; /* Spazio sotto l'header */
+    padding-top: 40px; /* Spazio sotto l'header */
     display: flex;
     flex-direction: column; /* Dispone i figli in colonna */
 }
@@ -76,7 +76,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1px;
 }
 
 /* Modifica del testo della sezione hero */
@@ -194,9 +193,6 @@ footer {
     }
     .menu li {
         margin-left: 5px; /* Spazio tra i link */
-    }
-    .hero {
-        margin-top: 1px;
     }
     .hero h2 {
         font-size: 24px; /* Aumenta la dimensione del titolo */
