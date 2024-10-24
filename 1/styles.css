@@ -78,7 +78,7 @@ main {
     display: flex;
     flex-wrap: wrap; /* Permette ai contenuti di andare a capo se necessario */
     justify-content: space-around; /* Spazio uniforme tra i continenti */
-    align-items: center;
+    align-items: flex-start; /* Allinea i contenitori nella parte superiore */
     flex: 1; /* Fa sì che la sezione occupi lo spazio rimanente del main */
     padding: 20px;
 }
@@ -131,5 +131,6 @@ footer {
     .continente {
         flex-basis: calc(100% - 20px); /* Ogni continente occupa tutta la larghezza su schermi piccoli */
         margin: 10px 0; /* Margine verticale per i contenitori */
+        margin-bottom: 20px; /* Distanza verticale tra le righe */
     }
 }
