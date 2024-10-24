@@ -148,7 +148,6 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
     flex: 1; /* Assicura che occupino altezza uguale */
     display: flex;
-    flex-wrap: nowrap; /* Assicura che gli elementi non vadano a capo */
 }
 
 .sottocontenitore p {
