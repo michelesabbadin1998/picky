@@ -148,20 +148,37 @@ footer {
 
 /* Media query per schermi piccoli */
 @media screen and (max-width: 768px) {
-    .header-fascia {
-        padding: 10px; /* Spaziatura interna maggiore */
+    /* Dimensioni del titolo e del paragrafo nella sezione hero */
+    .hero h2 {
+        font-size: 24px; /* Aumenta la dimensione del titolo */
     }
-    .menu {
-        flex-direction: column; /* Menu verticale su schermi piccoli */
-        align-items: center; /* Allinea i link al centro */
+
+    .hero p {
+        font-size: 18px; /* Aumenta la dimensione del paragrafo */
     }
-    .menu li {
-        margin: 5px 0; /* Margine verticale per i link */
+
+    /* Stile del pulsante */
+    .btn {
+        font-size: 18px; /* Aumenta la dimensione del pulsante */
+        padding: 15px 25px; /* Aumenta il padding del pulsante */
     }
+
+    .continenti {
+        /* Modifiche alla sezione continenti per spaziatura */
+        justify-content: flex-start; /* Allinea a sinistra */
+        padding: 10px; /* Riduci il padding */
+    }
+
+    /* Contenitori continenti */
     .continente {
-        flex-basis: calc(100% - 20px); /* Ogni continente occupa tutta la larghezza su schermi piccoli */
-        margin: 10px 0; /* Margine verticale per i contenitori */
-        margin-bottom: 20px; /* Distanza verticale tra le righe */
-        align-items: flex-start; /* Allinea i contenitori nella parte superiore */
+        flex-basis: calc(50% - 20px); /* Due contenitori per riga */
+        margin: 10px; /* Margine tra i continenti */
+    }
+
+    /* Sezione continenti per visualizzazione singola */
+    @media screen and (max-width: 480px) {
+        .continente {
+            flex-basis: calc(100% - 20px); /* Un contenitore per riga su schermi molto piccoli */
+        }
     }
 }
