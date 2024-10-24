@@ -151,6 +151,11 @@ main {
     flex-wrap: nowrap; /* Assicura che gli elementi non vadano a capo */
 }
 
+.sottocontenitore p {
+    text-align: center;
+    padding: 10px;
+}
+    
 /* Stile del pulsante all'interno dei sottocontenitori */
 .btn-sidebar {
     background-color: #4CAF50; /* Blu più scuro */
