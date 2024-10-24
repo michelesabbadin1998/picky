@@ -161,5 +161,6 @@ footer {
         flex-basis: calc(100% - 20px); /* Ogni continente occupa tutta la larghezza su schermi piccoli */
         margin: 10px 0; /* Margine verticale per i contenitori */
         margin-bottom: 20px; /* Distanza verticale tra le righe */
+        align-items: flex-start; /* Allinea i contenitori nella parte superiore */
     }
 }
