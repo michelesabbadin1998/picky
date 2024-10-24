@@ -209,7 +209,7 @@ footer {
     text-align: center;
     width: 100%; /* Larghezza completa del footer */
     font-size: 12px;
-    padding: 10px; /* Spaziatura interna */
+    padding: 1px; /* Spaziatura interna */
     position: relative; /* Posizionamento relativo per il footer */
     height: auto;
 }
