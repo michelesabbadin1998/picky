@@ -73,8 +73,18 @@ main {
     align-items: center;
 }
 
+/* Modifica del testo della sezione hero */
+.hero h2 {
+    color: #2e7d32; /* Verde scuro per il titolo */
+}
+
+.hero p {
+    color: #388e3c; /* Verde chiaro per il paragrafo */
+}
+
+/* Nuovo stile per il pulsante */
 .btn {
-    background-color: #4CAF50; /* Colore di sfondo */
+    background-color: #2196F3; /* Blu moderno */
     color: white; /* Colore del testo */
     border: none; /* Rimuove il bordo */
     padding: 12px 20px; /* Padding per il pulsante */
@@ -88,7 +98,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #45a049; /* Colore di sfondo al passaggio del mouse */
+    background-color: #1976D2; /* Blu più scuro al passaggio del mouse */
     transform: translateY(-3px); /* Movimento verso l'alto al passaggio del mouse */
 }
 
