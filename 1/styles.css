@@ -151,6 +151,10 @@ footer {
 /* Media query per schermi piccoli */
 @media screen and (max-width: 768px) {
     /* Dimensioni del titolo e del paragrafo nella sezione hero */
+    
+    .menu a {
+        font-size: 12px; /* Aumenta la dimensione del titolo */
+    }
     .hero h2 {
         font-size: 24px; /* Aumenta la dimensione del titolo */
     }
