@@ -243,7 +243,7 @@ main {
 
 .continente img {
     width: 100%; /* L'immagine occupa tutta la larghezza del box */
-    height: 150px; /* Altezza fissa dell'immagine */
+    height: 80%; /* Altezza fissa dell'immagine */
     object-fit: cover; /* Adatta l'immagine al contenitore senza distorsioni */
 }
 
