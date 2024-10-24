@@ -95,6 +95,10 @@ main {
     transition: transform 0.2s ease; /* Transizione per il movimento */
 }
 
+.continente:hover {
+    transform: translateY(-5px); /* Leggero sollevamento al passaggio del mouse */
+}
+
 .continente img {
     width: 100%; /* L'immagine occupa tutta la larghezza del box */
     height: 150px; /* Altezza fissa dell'immagine */
