@@ -80,12 +80,12 @@ main {
 
 /* Modifica del testo della sezione hero */
 .hero h2 {
-    color: #2e7d32; /* Verde scuro per il titolo */
+    color: #ffffff; 
     margin-top: 15px;
 }
 
 .hero p {
-    color: #388e3c; /* Verde chiaro per il paragrafo */
+    color: #ffffff; 
 }
 
 /* Nuovo stile per il pulsante */
