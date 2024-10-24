@@ -33,6 +33,7 @@ nav {
     list-style-type: none; /* Rimuovi i punti elenco */
     padding: 0; /* Rimuovi padding */
     margin: 0; /* Rimuovi margini */
+    display: flex; /* Mantiene il menu in riga */
 }
 
 .menu li {
@@ -91,6 +92,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leggera ombra */
     overflow: hidden; /* Per far sì che l'immagine rimanga all'interno del box */
+    transition: transform 0.2s ease; /* Transizione per il movimento */
 }
 
 .continente img {
@@ -113,9 +115,7 @@ footer {
 /* Media query per schermi piccoli */
 @media screen and (max-width: 768px) {
     .header-fascia {
-        flex-direction: column; /* Header verticale su schermi piccoli */
         padding: 10px; /* Spaziatura interna maggiore */
-        align-items: center; /* Allinea gli elementi al centro */
     }
     .menu {
         flex-direction: column; /* Menu verticale su schermi piccoli */
