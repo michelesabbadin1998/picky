@@ -23,7 +23,7 @@ html, body {
     top: 0; /* Posiziona la fascia in cima alla pagina */
     left: 0; /* Posiziona a sinistra */
     z-index: 1000; /* Assicura che sia sopra altri elementi */
-    height: 30px;
+    height: 40px;
 }
 
 nav {
@@ -146,6 +146,7 @@ footer {
     font-size: 12px;
     padding: 10px; /* Spaziatura interna */
     position: relative; /* Posizionamento relativo per il footer */
+    height: 30px;
 }
 
 /* Media query per schermi piccoli */
