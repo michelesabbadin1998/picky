@@ -147,7 +147,6 @@ footer {
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: center;
         height: auto;
         padding: 10px;
     }
@@ -159,6 +158,7 @@ footer {
     .menu {
         flex-direction: column;
         margin-top: 10px;
+        width: 100%; /* Menu a tutta larghezza su schermi piccoli */
     }
 
     .menu li {
@@ -170,15 +170,19 @@ footer {
     }
 
     .hero h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .hero p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
-    .continenti {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Più strette su mobile */
+     .continenti {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Più colonne su mobile */
+    }
+
+    .continente img {
+        height: 100px;
     }
 
     footer {
