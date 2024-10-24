@@ -180,5 +180,17 @@ footer {
         .continente {
             flex-basis: calc(100% - 20px); /* Un contenitore per riga su schermi molto piccoli */
         }
+    /* Stili per il desktop */
+    @media screen and (min-width: 769px) {
+        .header-fascia {
+            padding: 5px 20px; /* Riduci il padding per l'header */
+            height: auto; /* Permetti all'header di adattarsi al contenuto */
+        }
+
+        .menu a {
+            font-size: 16px; /* Aumenta leggermente la dimensione del font dei link nel menu */
+        }
+    }
+
     }
 }
