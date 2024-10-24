@@ -1,115 +1,70 @@
-html, body 
-{
-    min-height: 100vh; /* 100% dell'altezza della finestra */
-    margin: 0; /* Rimuove i margini di default */
-    padding: 0; /* Rimuove il padding di default */
-    display: flex; /* Imposta il body come contenitore flessibile */
-    flex-direction: column; /* Dispone i figli in colonna */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-main 
-{
-    flex: 1; /* Fa in modo che il main cresca per occupare lo spazio rimanente */
-    padding: 20px;
-    margin-top: 40px; /* Spazio sotto l'header */
-    padding-bottom: 60px; /* Spazio extra per evitare che il footer si sovrapponga */
-}
-body 
-{
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
-footer 
-{
-    background-color: #4CAF50; /* Colore verde del footer */
-    color: white;
-    text-align: center;
-    width: 100%;
-    font-size: 12px;
-    margin: 0px;
-    z-index: 1000;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Ombra sopra il footer */
-    margin-top: 10px;
-}
-footer ul 
-{
-    list-style: none;
-    padding: 0;
+
+/* Layout generale */
+body {
     display: flex;
-    justify-content: center;
-    margin: 1px 0;
+    flex-direction: column;
 }
-footer ul li 
-{
-    margin: 0 15px; /* Spazio tra i link */
-}
-footer ul li a 
-{
-    color: white;
-    text-decoration: none;
-    font-size: 12px; /* Puoi modificare la dimensione del testo dei social */
-}
-footer ul li a:hover 
-{
-    text-decoration: underline;
-}
-footer p a 
-{
-    color: white;
-    text-decoration: none;
-}
-footer p a:hover 
-{
-    text-decoration: underline;
-}
-.header-fascia 
-{
+
+header {
     background-color: #4CAF50; /* Colore verde */
-    color: white; /* Testo bianco */
-    padding: 5px; /* Spaziatura interna */
-    display: flex; 
-    justify-content: space-between; /* Spazio tra il titolo e il menu */
-    align-items: center; /* Allinea verticalmente il contenuto */
-    width: 100%; /* Estendi la fascia alla larghezza completa della pagina */
-    position: fixed; /* Fissa la fascia in alto */
-    top: 0; /* Posiziona la fascia in cima alla pagina */
-    left: 0; /* Posiziona a sinistra */
-    z-index: 1000; /* Assicura che sia sopra altri elementi */
-    height: 30px; /* Modificato per allineare correttamente */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leggera ombra */
-    transition: background-color 0.3s; /* Transizione per l'effetto hover */
-}
-.header-fascia h1 
-{
-    text-align: left; /* Allinea il testo a sinistra */
-    font-size: 22px; /* Modifica la dimensione del carattere (puoi cambiarla a tuo piacimento) */
-    margin: 0; /* Rimuove il margine predefinito */
-    padding: 0;
     color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leggera ombra */
+    height: 50px; /* Altezza per i dispositivi mobili */
 }
+
+header h1 {
+    font-size: 1.5em; /* Dimensione più piccola per dispositivi mobili */
+    margin: 0;
+}
+
 .menu {
-    list-style-type: none; /* Rimuovi i punti elenco */
-    display: flex; /* Utilizza flexbox per il menu */
-    padding: 0; /* Rimuovi padding */
-    margin: 0; /* Rimuovi margini */
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
+
 .menu li {
-    margin-left: 5px; /* Riduci lo spazio tra i link */
+    margin-left: 10px;
 }
-.menu li:last-child {
-    margin-right: 5px; /* Rimuovi spazio a destra dell'elemento "Contattaci" */
-}
+
 .menu a {
-    color: white; /* Colore dei link */
-    text-decoration: none; /* Rimuovi sottolineatura */
-    font-size: 14px; /* Dimensione del testo più piccola */
-    padding: 8px 12px; /* Riduci il padding per rendere il menu più compatto */
-    border-radius: 4px; /* Aggiungi angoli arrotondati per un aspetto più moderno */
-    transition: background-color 0.3s, color 0.3s; /* Aggiungi una transizione */
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 10px;
 }
-.menu a:hover {
-    text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
-    background-color: rgba(255, 255, 255, 0.1); /* Aggiungi uno sfondo al passaggio del mouse */
+
+main {
+    flex: 1;
+    margin-top: 60px; /* Spazio per l'header */
+    display: flex;
+    flex-direction: column;
 }
+
+/* Stili per la Hero */
 .hero {
     background-size: cover;
     background-position: center;
@@ -121,171 +76,111 @@ footer p a:hover
     justify-content: center;
     align-items: center;
 }
-.hero h2 
-{
-    font-size: 3em;
-    margin: 0;
+
+.hero h2 {
+    font-size: 2em;
 }
-.hero p 
-{
-    font-size: 1.5em;
-    margin-top: 10px;
+
+.hero p {
+    font-size: 1.2em;
 }
-.view-all-button {
-    padding: 10px 20px; /* Spaziatura interna */
-    background-color: #28a745; /* Colore di sfondo verde */
-    color: white; /* Colore del testo bianco */
-    border: none; /* Rimuovi il bordo */
-    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
-    font-size: 1em; /* Dimensione del testo */
-    margin-top: 15px; /* Margine superiore */
-    border-radius: 5px;
-}
-.view-all-button:hover {
-    background-color: #218838; /* Colore di sfondo verde scuro al passaggio del mouse */
-}
-/* Stili per il Main */
-main 
-{
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 40px); /* L'altezza del main sarà il 100% della viewport meno l'header */
-}
-/* Stili per la sezione dei continenti */
-.continenti 
-{
-    display: flex;
-    flex-wrap: wrap; /* Permette ai contenuti di andare a capo se necessario */
-    justify-content: space-around; /* Spazio uniforme tra i continenti */
-    align-items: center;
-    flex: 1; /* Fa sì che la sezione occupi lo spazio rimanente del main */
-    padding: 20px;
-    background-color: #f8f8f8; /* Colore di sfondo chiaro */
-}
-.continente 
-{
-    flex-basis: calc(33% - 10px);
-    margin: 10px;
-    text-align: center;
-    background-color: #fff; /* Sfondo bianco per ogni sezione */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leggera ombra */
-    overflow: hidden; /* Per far sì che l'immagine rimanga all'interno del box */
-    transition: transform 0.3s ease;
-    min-width: 250px; /* Imposta un massimo per evitare che diventino troppo piccole */
-}
-.continente:hover 
-{
-    transform: translateY(-5px); /* Leggero sollevamento al passaggio del mouse */
-}
-.continente img 
-{
-    width: 100%; /* L'immagine occupa tutta la larghezza del box */
-    height: 150px; /* Altezza fissa dell'immagine */
-    object-fit: cover; /* Adatta l'immagine al contenitore senza distorsioni */
-}
-.continente p 
-{
-    margin: 15px 0;
-    font-size: 0.8em;
-    color: #333;
-}
-.continente a 
-{
-    text-decoration: none; /* Rimuove la sottolineatura dai link */
-    color: #333; /* Colore del testo */
-    font-size: 1em; /* Dimensione del testo */
-    font-family: 'Arial', sans-serif; /* Font moderno, puoi cambiarlo se desideri */
-    transition: color 0.3s, transform 0.3s; /* Transizione per effetto hover */
-}
-.continente a:hover 
-{
-    color: #007BFF; /* Colore del testo al passaggio del mouse */
-    transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
-}
-.continente p 
-{
-    margin: 15px 0;
-    font-size: 1em;
-    color: #333;
-}
-.btn 
-{
+
+.hero .btn {
     background-color: #007BFF;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    margin-top: 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-.btn:hover {
+
+.hero .btn:hover {
     background-color: #0056b3;
 }
-.btn 
-{
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+
+/* Stili per la sezione Continenti */
+.continenti {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive con minimo di 150px */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
 }
-.btn:hover 
-{
-    background-color: #0056b3;
+
+.continente {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
-h1 
-{
+
+.continente:hover {
+    transform: translateY(-5px);
+}
+
+.continente img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.continente p {
+    margin: 10px 0;
+    font-size: 1em;
     color: #333;
 }
-button 
-{
-    padding: 10px;
-    background-color: #007BFF; /* Blu */
+
+footer {
+    background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
-button:hover 
-{
-    background-color: #0056b3; /* Blu scuro */
-}
-h2 
-{
-    color: #007BFF; /* Blu */
-}
+
 /* Media query per schermi piccoli */
-@media screen and (max-width: 768px) 
-{
-    .header-fascia 
-    {
+@media screen and (max-width: 768px) {
+    header {
         flex-direction: column;
+        align-items: center;
         height: auto;
         padding: 10px;
     }
-    .menu 
-    {
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .menu {
         flex-direction: column;
-        align-items: center;
+        margin-top: 10px;
     }
-    .menu li 
-    {
-        margin: 10px 0;
+
+    .menu li {
+        margin: 5px 0;
     }
-    .menu li a 
-    {
-        font-size: 18px;
+
+    .hero {
+        height: 40vh;
     }
-    h1 
-    {
-        font-size: 24px;
+
+    .hero h2 {
+        font-size: 1.5em;
     }
-    footer
-    {
-        font-size: 10px;
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .continenti {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Più strette su mobile */
+    }
+
+    footer {
+        font-size: 0.8em;
     }
 }
-
