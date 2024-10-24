@@ -125,7 +125,7 @@ main {
     width: 30%; /* Occupa il 25% della larghezza su desktop */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Distribuisce lo spazio tra i figli */
     align-items: center;
     margin-right: 20px; /* Spazio tra il contenitore sinistra e i continenti */
     border-radius: 8px;
