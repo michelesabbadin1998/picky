@@ -8,6 +8,7 @@ html, body {
     padding: 0; /* Rimuove il padding di default */
     display: flex; /* Imposta il body come contenitore flessibile */
     flex-direction: column; /* Dispone i figli in colonna */
+    font-family: 'Roboto', sans-serif; /* Imposta il font moderno */
 }
 
 .header-fascia {
