@@ -15,6 +15,10 @@ html, body {
 .header h1 {
     font-size: 24px; /* Dimensione del testo */
 }
+/* Stile per la lettera blu */
+.blue-letter {
+    color: #2196F3; /* Lo stesso colore blu del pulsante */
+}
 .header-fascia {
     background-color: #4CAF50; /* Colore verde */
     color: white; /* Testo bianco */
@@ -138,7 +142,6 @@ main {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
-    margin-bottom: 20px; /* Spazio tra i sottocontenitori */
     flex: 1; /* Assicura che occupino altezza uguale */
 }
 /* Sezione continenti */
