@@ -256,7 +256,7 @@ main {
 .mission {
     width: 100%; /* Occupa tutta la larghezza */
     background-color: #e0e0e0; /* Sfondo leggero e moderno */
-    padding: 40px 20px; /* Spaziatura interna per un look arioso */
+    padding: 20px 10px; /* Spaziatura interna per un look arioso */
     margin-top: 0px; /* Spazio sopra la missione */
     text-align: center; /* Allinea il testo al centro */
     border-radius: 8px; /* Aggiunge angoli arrotondati */
