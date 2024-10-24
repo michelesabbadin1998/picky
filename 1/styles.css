@@ -159,6 +159,9 @@ footer {
     .header-fascia {
         height: auto;
     }
+    .footer {
+        height: auto;
+    }
     .menu a {
         font-size: 10px; /* Aumenta la dimensione del titolo */
     }
