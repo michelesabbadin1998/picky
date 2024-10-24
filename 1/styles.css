@@ -156,6 +156,7 @@ main {
     text-align: center;
     width: 50%;
     float: left; /* per allineare a sinistra */
+    height: 100%; /* Riempie tutto lo spazio del genitore */
 }
 
 /* Descrizione e bottone a destra */
