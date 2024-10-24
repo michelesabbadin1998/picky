@@ -168,6 +168,7 @@ main {
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.3s;
     height: auto;
+    display: block; /* Forza il bottone a stare su una nuova linea */
 }
 
 .btn-sidebar:hover {
