@@ -14,7 +14,7 @@ html, body {
 .header-fascia {
     background-color: #4CAF50; /* Colore verde */
     color: white; /* Testo bianco */
-    padding: 10px 20px; /* Spaziatura interna */
+    padding: 2px 10px; /* Spaziatura interna */
     display: flex; 
     justify-content: space-between; /* Spazio tra il titolo e il menu */
     align-items: center; /* Allinea verticalmente il contenuto */
