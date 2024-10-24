@@ -171,6 +171,9 @@ footer {
     .menu li {
         margin-left: 5px; /* Spazio tra i link */
     }
+    .hero {
+        margin-top: 1px;
+    }
     .hero h2 {
         font-size: 24px; /* Aumenta la dimensione del titolo */
     }
