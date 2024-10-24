@@ -146,16 +146,14 @@ main {
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
     flex: 1; /* Assicura che occupino altezza uguale */
+    display: flex;
 }
 
 /* Immagine a sinistra */
 .content-left {
     background-size: cover;
     background-position: center;
-    flex: 1;
-    text-align: center;
     width: 50%;
-    float: left; /* per allineare a sinistra */
     height: 100%; /* Riempie tutto lo spazio del genitore */
 }
 
@@ -165,7 +163,8 @@ main {
     padding-left: 20px;
     text-align: left;
     width: 50%;
-    float: right; /* per allineare a sinistra */
+    display: flex;
+    flex-direction: column;
 }
 
 .content-right p {
