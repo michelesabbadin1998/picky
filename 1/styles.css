@@ -231,7 +231,7 @@ main {
 
 /* Modifica anche il paragrafo all'interno del continente */
 .continente p {
-    margin: 15px 0;
+    margin: 5px 0;
     font-size: 1em; /* Dimensione del testo normale */
     color: #333; /* Colore del testo */
     font-weight: 500; /* Aggiungi un peso del font per un aspetto più pulito */
@@ -243,7 +243,7 @@ main {
 
 .continente img {
     width: 100%; /* L'immagine occupa tutta la larghezza del box */
-    height: 80%; /* Altezza fissa dell'immagine */
+    height: 150px; /* Altezza fissa dell'immagine */
     object-fit: cover; /* Adatta l'immagine al contenitore senza distorsioni */
 }
 
