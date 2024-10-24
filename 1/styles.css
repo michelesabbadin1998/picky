@@ -125,8 +125,8 @@ main {
     width: 30%; /* Occupa il 25% della larghezza su desktop */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align: center;
+    justify-content: center;
+    align-items: center;
     margin-right: 20px; /* Spazio tra il contenitore sinistra e i continenti */
     border-radius: 8px;
 }
