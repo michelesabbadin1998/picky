@@ -126,6 +126,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align: center;
     margin-right: 20px; /* Spazio tra il contenitore sinistra e i continenti */
     border-radius: 8px;
 }
