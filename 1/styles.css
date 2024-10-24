@@ -179,7 +179,7 @@ main {
 
 /* Stile del pulsante all'interno dei sottocontenitori */
 .btn-sidebar {
-    background-color: #1976D2; /* Blu più scuro */
+    background-color: #4CAF50; /* Blu più scuro */
     color: white;
     border: none;
     padding: 8px 16px;
@@ -191,7 +191,7 @@ main {
 }
 
 .btn-sidebar:hover {
-    background-color: #0d47a1; /* Colore più scuro al passaggio del mouse */
+    background-color: #419444; /* Colore più scuro al passaggio del mouse */
     transform: translateY(-3px); /* Effetto di sollevamento */
 }
 
