@@ -122,15 +122,17 @@ main {
 /* Contenitore sinistra */
 .contenitore-sinistra {
     background-color: #2196F3; /* Sfondo dello stesso colore del btn */
-    width: 25%; /* Occupa il 25% della larghezza su desktop */
+    width: 30%; /* Occupa il 25% della larghezza su desktop */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-right: 20px; /* Spazio tra il contenitore sinistra e i continenti */
+    border-radius: 8px;
 }
 
 /* Sottocontenitori */
 .sottocontenitore {
+    width: 90%;
     background-color: #f0f0f0; /* Sfondo chiaro per i sottocontenitori */
     padding: 10px;
     border-radius: 8px;
@@ -146,7 +148,7 @@ main {
     align-items: flex-start; /* Allinea i contenitori nella parte superiore */
     flex: 1; /* Fa sì che la sezione occupi lo spazio rimanente del main */
     padding: 20px;
-    width: 75%;
+    width: 70%;
 }
 
 /* Contenitori continenti */
