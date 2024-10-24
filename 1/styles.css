@@ -247,6 +247,30 @@ main {
     object-fit: cover; /* Adatta l'immagine al contenitore senza distorsioni */
 }
 
+.mission {
+    width: 100%; /* Occupa tutta la larghezza */
+    background-color: #f9f9f9; /* Sfondo leggero e moderno */
+    padding: 40px 20px; /* Spaziatura interna per un look arioso */
+    margin-top: 30px; /* Spazio sopra la missione */
+    text-align: center; /* Allinea il testo al centro */
+    border-radius: 8px; /* Aggiunge angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leggera ombra per effetto moderno */
+}
+
+.mission h2 {
+    font-size: 2rem; /* Titolo più grande e d'impatto */
+    color: #333; /* Colore del testo */
+    margin-bottom: 15px; /* Spazio sotto il titolo */
+}
+
+.mission p {
+    font-size: 1.2rem; /* Dimensione del testo più leggibile */
+    color: #555; /* Testo grigio per un look moderno */
+    line-height: 1.6; /* Aumenta l'altezza della linea per migliorare la leggibilità */
+    max-width: 800px; /* Limita la larghezza del testo per evitare che sia troppo largo */
+    margin: 0 auto; /* Centra il paragrafo */
+}
+
 /* Footer */
 footer {
     background-color: #4CAF50; /* Colore verde del footer */
