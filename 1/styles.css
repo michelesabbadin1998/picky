@@ -76,6 +76,7 @@ main {
 /* Modifica del testo della sezione hero */
 .hero h2 {
     color: #2e7d32; /* Verde scuro per il titolo */
+    margin-top: 15px;
 }
 
 .hero p {
