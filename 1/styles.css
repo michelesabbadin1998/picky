@@ -160,7 +160,10 @@ footer {
         height: auto;
     }
     .menu a {
-        font-size: 12px; /* Aumenta la dimensione del titolo */
+        font-size: 10px; /* Aumenta la dimensione del titolo */
+    }
+    .menu li {
+        margin-left: 5px; /* Spazio tra i link */
     }
     .hero h2 {
         font-size: 24px; /* Aumenta la dimensione del titolo */
