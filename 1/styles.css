@@ -146,7 +146,7 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
-    height: 45%
+    height: 45%;
     display: flex;
     justify-content: center; /* Centra orizzontalmente */
     align-items: center; /* Centra verticalmente */
