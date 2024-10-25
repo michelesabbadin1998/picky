@@ -181,6 +181,14 @@ main {
 }
 
 /* Sezione continenti */
+
+.titolo-continenti {
+    text-align: center; /* Centra il testo */
+    font-size: 2rem; /* Dimensione del testo */
+    color: #333; /* Colore del testo */
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+}
+
 .continenti {
     display: flex;
     flex-wrap: wrap; /* Permette ai contenuti di andare a capo se necessario */
