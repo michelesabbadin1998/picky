@@ -153,6 +153,11 @@ main {
 .sottocontenitore p {
     text-align: center;
     padding: 10px;
+    font-size: 1.1rem; /* Aumenta la dimensione del testo */
+    color: #ffffff; /* Colore del testo bianco per maggiore contrasto */
+    line-height: 1.5; /* Aumenta l'altezza della linea per migliorare la leggibilità */
+    font-weight: 500; /* Rende il testo leggermente più spesso */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra leggera al testo */
 }
     
 /* Stile del pulsante all'interno dei sottocontenitori */
@@ -166,9 +171,6 @@ main {
     font-size: 14px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
-    height: auto;
-    display: block; /* Forza il bottone a stare su una nuova linea */
-    width: auto; 
 }
 
 .btn-sidebar:hover {
