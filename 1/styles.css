@@ -108,6 +108,7 @@ main {
     border-radius: 50px; /* Angoli arrotondati */
     transition: background-color 0.3s, transform 0.3s; /* Transizioni per il colore e il movimento */
     margin-top: 20px; /* Margine sopra il pulsante */
+    margin-bottom: 20px;
 }
 
 .btn:hover {
