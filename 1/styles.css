@@ -273,6 +273,10 @@ footer {
     height: auto;
 }
 
+.footer a {
+    text-decoration: none;    
+}
+
 /* Media query per schermi piccoli */
 @media screen and (max-width: 768px) {
     /* Dimensioni del titolo e del paragrafo nella sezione hero */
