@@ -146,7 +146,7 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
-    height: 45%;
+    height: 47%;
     display: flex;
     justify-content: center; /* Centra orizzontalmente */
     align-items: center; /* Centra verticalmente */
@@ -159,6 +159,7 @@ main {
     color: #555; /* Colore del testo bianco per maggiore contrasto */
     line-height: 1.1; /* Aumenta l'altezza della linea per migliorare la leggibilità */
     font-weight: 500; /* Rende il testo leggermente più spesso */
+    display: block;
 }
     
 /* Stile del pulsante all'interno dei sottocontenitori */
@@ -173,6 +174,7 @@ main {
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
     margin: 0 auto; /* Centra orizzontalmente */
+    display: block;
 }
 
 .btn-sidebar:hover {
