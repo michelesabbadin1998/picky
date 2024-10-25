@@ -197,7 +197,7 @@ main {
     justify-content: space-around; /* Spazio uniforme tra i continenti */
     align-items: flex-start; /* Allinea i contenitori nella parte superiore */
     flex: 1; /* Fa sì che la sezione occupi lo spazio rimanente del main */
-    padding: 20px;
+    padding: 10px;
     width: 70%;
 }
 
