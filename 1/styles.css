@@ -247,6 +247,12 @@ main {
     margin-bottom: 15px; /* Spazio sotto il titolo */
 }
 
+.mission h1 {
+    font-size: 2rem; /* Titolo più grande e d'impatto */
+    color: #333; /* Colore del testo */
+    margin-bottom: 15px; /* Spazio sotto il titolo */
+}
+
 .mission p {
     font-size: 1.2rem; /* Dimensione del testo più leggibile */
     color: #555; /* Testo grigio per un look moderno */
